@@ -1,0 +1,8 @@
+##一个简单的rpc调用
+
+
+ConsumerProxy是客户端请求的代理类，通过Proxy.newProxyInstance的InvocationHandler代理函数调用，内部通过socket和服务端通信，对客户端rpc调用透明
+
+ProviderReflect是服务端接受请求的代理类，通过MethodUtils.invokeExactMethod反射调用实际处理类
+
+HelloServiceImpl是服务端实际处理类
