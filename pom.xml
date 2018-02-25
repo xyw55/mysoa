@@ -11,8 +11,14 @@
     <modules>
         <module>grpcdemo</module>
         <module>thriftdemo</module>
-        <module>rpc</module>
+        <module>rpcdemo</module>
+        <module>rpcserializer</module>
     </modules>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
