@@ -1,4 +1,4 @@
-package com.xyw55.rpc.serializer;
+package com.xyw55.rpc.common;
 
 import org.apache.commons.lang3.StringUtils;
 

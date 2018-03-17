@@ -1,4 +1,4 @@
-package com.xyw55.rpc.serializer;
+package com.xyw55.rpc.common;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
