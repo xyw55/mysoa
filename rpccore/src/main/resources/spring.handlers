@@ -1,0 +1,2 @@
+http\://www.xyw55.com/schema/rpc-service=com.xyw55.rpc.core.spring.RpcServiceNamespaceHandler
+http\://www.xyw55.com/schema/rpc-reference=com.xyw55.rpc.core.spring.RpcReferenceNamespaceHandler

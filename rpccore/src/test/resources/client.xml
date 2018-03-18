@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RpcServer="http://www.xyw55.com/schema/rpc-service"
+       xmlns:RpcClient="http://www.xyw55.com/schema/rpc-reference"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helloService" class="com.xyw55.rpc.test.HelloServiceImpl"/>
+    <RpcServer:service id="helloServiceRegister"
+                       interface="com.xyw55.rpc.test.HelloService"
+                       ref="helloService"
+                       groupName="default"
+                       weight="2"
+                       appKey="myrpc"
+                       workerThreads="12"
+                       serverPort="8081"
+                       timeout="600"/>
+
+    <RpcClient:reference id="remoteHelloService"
+                         interface="com.xyw55.rpc.test.HelloService"
+                         clusterStrategy="WeightRandom"
+                         remoteAppKey="myrpc"
+                         groupName="default"
+                         timeout="600"/>
+</beans>
