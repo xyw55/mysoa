@@ -17,7 +17,7 @@ public interface IRegisterCenter4Provider {
      *
      * @param serviceMetaData
      */
-    void registerProvider(List<ProviderService> serviceMetaData);
+    void registerProvider(final List<ProviderService> serviceMetaData);
 
     /**
      * 服务端获取服务提供者的信息
